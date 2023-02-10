@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+
+
+<!-- Collect this link
+	https://www.youtube.com/watch?v=uKC-vs3GXtw
+    default color background-color: #84e184 ccffcc-->
+<html lang=" en">
+
+    <head> 
+
+		 <title>Registration</title>  
+		 <meta charset="utf-8">
+		 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		 <link rel="stylesheet" href="{% static 'css/boot.css' %}">
+	  
+		 
+
+		 <style type="text/css">
+		 	
+		 	   body {
+		 	   	background-image: url(E:/newproject/ecommerce/static/images/banner.jpg);
+		 	   }
+		 	   
+
+		 	   #form {
+		 	   	background-color: #339966;
+		 	   	min-height: 700px;
+		 	   	padding: 5px 40px 40px;
+		 	   }
+
+		 	   .registration{
+		 	   	font-size: 55px;
+		 	   	font-family: Agency FB;
+		 	   	font-weight: 700;
+		 	   	border-bottom-style: ridge;
+		 	   }
+
+		 	   .text{
+		 	   	height: 43px;
+		 	   }
+
+		 	   label{
+		 	   	font-size: 18px;
+		 	   }
+
+		 	   .btn-primary{
+		 	   	background-color: 0px;
+		 	   	padding: 10;
+		 	   	width: 49%;
+		 	   }
+
+		 	   .btn-danger{
+		 	   	background-color: 0px;
+		 	   	padding: 10;
+		 	   	width: 49%;
+		 	   }
+
+
+
+		 </style>
+
+    </head>
+
+
+    <body>
+    	
+
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 col-md-offset-3" id="form">
+    			<center> <b class="registration">Registration Form</b></center>
+    			<form>
+    				<div class="form-group">
+    					<label>First Name :</label>
+    					<input type="text" name="first-name" class="form-control text" placeholder="Enter First Name">
+    					
+    				</div>
+
+
+    				<div class="form-group">
+    					<label>Last Name :</label>
+    					<input type="text" name="first-name" class="form-control text" placeholder="Enter Last Name">
+    					
+    				</div>
+
+
+    				<div class="form-group">
+    					<label>Password:</label>
+    					<input type="password" name="password" class="form-control text" placeholder="Enter Password" maxlength="8">
+    					
+    				</div>
+
+    				<div class="form-group">
+    					<label>Confirm Password:</label>
+    					<input type="password" name="conf-pwd" class="form-control text" placeholder="Enter Confirm Password" maxlength=" 8">
+    					
+    				</div>
+
+
+
+    				<div class="form-group">
+    					<label>National ID:</label>
+    					<input type="text" name="national-ID" class="form-control text" placeholder="Enter National ID">
+    					
+    				</div>
+
+
+    				<div class="form-group">
+       					<label> Select Role :</label>
+    					<select class="form-control text">
+    							  <option value="Admin">Admin</option>
+								  <option value="Doctior">Doctor</option>
+								  <option value="Patient">Patient</option>
+								  <option value="Pharmaceutical">Pharmaceutical</option>
+
+    					</select>
+
+    				</div>
+
+
+    				<div class="form-group">    					
+    					<input type="submit"  class="btn btn-primary" value="submit">
+
+    					<input type="reset"  class="btn btn-danger" value="reset">
+    					
+    				</div>
+
+
+
+
+
+    			</form>
+
+
+    		   </div>
+    		</div>   
+    		
+
+    	</div>
+
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+		
+
+    </body>
+
+
+    </html>
